@@ -84,6 +84,6 @@ footer span {
 /* Responsive Grid */
 @media (max-width: 768px) {
   main {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
 }
 }
