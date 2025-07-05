@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US"> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 – Dynamic Web Fundamentals – Carol Vigil</title> 
+        <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Cris Carolina Vigil Acuña.This is my home page. My name is Carolina Vigil. This is the WDD 131 course. And the porpouse of this page is that you know more about me.">
+        <meta name="author" content="Carolina Vigil">
+        <link rel="stylesheet" href="styles/base.css">
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+            <nav>
+                <a href="https://www.linkedin.com/feed/">LinkedIn</a>
+                <a href="https://byupw.instructure.com/">Canvas</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+                <a href="#">Final Project</a>
+            </nav> 
+        </header>
+        <main> 
+            <h1>Carolina Vigil</h1>
+            <section class="card">
+              <h2>About Me</h2>
+              <img src="images/profile.jpg" alt="Photo of me">
+              <p>Hello! I'm a web development student passionate about learning HTML, CSS, and JavaScript. I enjoy creating user-friendly websites and exploring new tech trends.</p>
+              <h2>My Favorite Place</h2>
+              <img src="images/picture.jpg" alt="A scenic view of my favorite place">
+              <p>One of my favorite places here in my city (Huanuco). It's a beautiful place tu spend time with my family and friends.
+            </section>
+            <section class="card">
+              <h2>Web Dev Resources</h2>
+              <ul>
+               <li><a href="#">Dev.to Community</a></li>
+               <li><a href="#">Smashing Magazine</a></li>
+               <li><a href="#">CSS Tricks</a></li>
+               <li><a href="#">W3 Schools</a></li>
+               <li><a href="#">Udemy</a></li>
+               <li><a href="#">Image Placeholder</a></li>
+              </ul>
+            </section>
+        </main>
+        <footer> 
+          <p>&copy; <span id="currentyear"></span> Carol Vigil</p>
+
+          <p id="lastModified"></p>
+          <script>
+            document.getElementById("currentyear").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+          </script>
+        </footer>
+    </body>
+</html>

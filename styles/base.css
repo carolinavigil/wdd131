@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #222;
+}
+
+header {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+header span {
+  display: block; /* centers logo + title */
+  font-weight: bold;
+  color: #ffd700; /* example highlight */
+}
+
+/* Navigation Flex Layout */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ffd700;
+  color: #333;
+  border-radius: 5px;
+}
+
+/* Main content layout */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Cards */
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Image Styling */
+.card img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #999;
+}
+
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer span {
+  color: #ffd700;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+}
+}
