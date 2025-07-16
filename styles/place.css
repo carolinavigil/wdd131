@@ -11,6 +11,7 @@ body {
   padding: 0;
   background-color: var(--secondary-color);
   color: #000;
+  font-family: 'Roboto', sans-serif;
 }
 
 header, footer {
@@ -47,10 +48,6 @@ header, footer {
   .weather-icon-mobile {
     display: none;
   }
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2 {
