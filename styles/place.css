@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #d50000; /* rojo bandera Perú */
+  --secondary-color: #ffffff;
+  --font-family: 'Segoe UI', sans-serif;
+  --padding: 1rem;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  color: #000;
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: var(--padding);
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.weather {
+  padding: var(--padding);
+  text-align: center;
+}
+
+.weather-icon-mobile {
+  width: 50px;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* ⛅ emoji para vista amplia */
+@media screen and (min-width: 700px) {
+  .weather-heading::after {
+    content: ' ⛅';
+    font-size: 1.5rem;
+  }
+
+  .weather-icon-mobile {
+    display: none;
+  }
+}

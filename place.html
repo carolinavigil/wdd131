@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visita Perú</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Visita Perú</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/peru-hero-small.webp" media="(max-width: 600px)" />
+        <source srcset="images/peru-hero-large.webp" media="(min-width: 601px)" />
+        <img src="images/peru-hero-large.webp" alt="Machu Picchu, Perú" />
+      </picture>
+    </section>
+
+    <section class="weather">
+      <h2 class="weather-heading">Clima</h2>
+      <p>Temperatura: <span id="temp">20</span> °C</p>
+      <p>Viento: <span id="speed">10</span> km/h</p>
+      <p>Sensación térmica: <span id="chill">Calculando...</span></p>
+      <img src="images/cloudy.svg" alt="Icono del clima" class="weather-icon-mobile" />
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Visita Perú</p>
+    <p>Última modificación: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
+
