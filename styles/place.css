@@ -48,3 +48,11 @@ header, footer {
     display: none;
   }
 }
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Merriweather', serif;
+}
