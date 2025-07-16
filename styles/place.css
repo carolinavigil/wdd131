@@ -1,7 +1,7 @@
 :root {
   --primary-color: #d50000; /* rojo bandera Perú */
   --secondary-color: #ffffff;
-  --font-family: 'Segoe UI', sans-serif;
+  --font-family: "Roboto", sans-serif;;
   --padding: 1rem;
 }
 
@@ -54,5 +54,5 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Merriweather', serif;
+  font-family: "Inconsolata", monospace;
 }
