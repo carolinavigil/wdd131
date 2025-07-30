@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A lot of temples around de world.">
+  <meta name="author" content="Carol Vigil">
   <title>Filtered Temples</title>
   <link rel="stylesheet" href="styles/filtered-temples.css" />
   <script src="scripts/filtered-temples.js" defer></script>
@@ -11,13 +13,14 @@
 <body>
   <header>
     <h1>Temples Around the World</h1>
-    <nav id="menu">
-      <button onclick="filterTemples('home')">Home</button>
-      <button onclick="filterTemples('old')">Old</button>
-      <button onclick="filterTemples('new')">New</button>
-      <button onclick="filterTemples('large')">Large</button>
-      <button onclick="filterTemples('small')">Small</button>
+    <nav>
+     <a href="filtered-temples.html">Home</a>
+     <a href="#old" onclick="filterTemples('old')">Old Temples</a>
+     <a href="#new" onclick="filterTemples('new')">New Temples</a>
+     <a href="#large" onclick="filterTemples('large')">Large Temples</a>
+     <a href="#small" onclick="filterTemples('small')">Small Temples</a>
     </nav>
+
   </header>
 
   <main>
