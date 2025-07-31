@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="The form to our page.">
+  <meta name="author" content="Carol Vigil">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html">
+      <!-- Product Name -->
+      <label for="product">Product Name:</label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+        <!-- Options inserted dynamically by JS -->
+      </select>
+
+      <!-- Overall Rating -->
+      <fieldset>
+        <legend>Overall Rating:</legend>
+        <div class="rating">
+          <label><input type="radio" name="rating" id="rate1" value="1" required> ☆</label>
+          <label><input type="radio" name="rating" id="rate2" value="2"> ☆☆</label>
+          <label><input type="radio" name="rating" id="rate3" value="3"> ☆☆☆</label>
+          <label><input type="radio" name="rating" id="rate4" value="4"> ☆☆☆☆</label>
+          <label><input type="radio" name="rating" id="rate5" value="5"> ☆☆☆☆☆</label>
+        </div>
+      </fieldset>
+
+      <!-- Date of Installation -->
+      <label for="install-date">Date of Installation:</label>
+      <input type="date" id="install-date" name="install-date" required>
+
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Useful Features (Check all that apply):</legend>
+        <label><input type="checkbox" id="feature1" name="features" value="easy-install"> Easy Installation</label>
+        <label><input type="checkbox" id="feature2" name="features" value="durable"> Durability</label>
+        <label><input type="checkbox" id="feature3" name="features" value="value"> Good Value</label>
+        <label><input type="checkbox" id="feature4" name="features" value="support"> Customer Support</label>
+      </fieldset>
+
+      <!-- Written Review -->
+      <label for="review">Written Review:</label>
+      <textarea id="review" name="review" rows="4" cols="40"></textarea>
+
+      <!-- User Name -->
+      <label for="username">Your Name:</label>
+      <input type="text" id="username" name="username">
+
+      <!-- Submit -->
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Peruvian Street Food | Last Updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>
