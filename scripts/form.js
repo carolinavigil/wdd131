@@ -16,3 +16,6 @@ products.forEach(product => {
 // Dynamic Footer
 document.getElementById('year').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
+document.addEventListener("DOMContentLoaded", function () {
+  // your code here
+});
