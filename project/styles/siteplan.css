@@ -1,0 +1,59 @@
+/* Typography */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F2E8CF;
+  color: #3E5641;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #D72638;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+header .logo {
+  width: 60px;
+  height: auto;
+}
+
+.subtitle {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+}
+
+main {
+  padding: 1rem 2rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  color: #D72638;
+  margin-top: 2rem;
+}
+
+ul {
+  list-style: disc inside;
+}
+
+footer {
+  background-color: #3E5641;
+  color: #F2E8CF;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.wireframe {
+  width: 100px;
+  height: auto;
+  border: 2px dashed #3E5641;
+  margin-top: 0.5rem;
+}
