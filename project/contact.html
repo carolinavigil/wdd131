@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Peruvian Street Food</title>
+  <link rel="stylesheet" href="styles/siteplan.css" />
+  <script defer src="scripts/sitepla.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Peruvian Street Food</h1>
+    <nav>
+      <ul>
+        <li><a href="siteplan.html">Home</a></li>
+        <li><a href="dishes.html">Dishes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Leave Us a Review</h2>
+    <form id="reviewForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="dish">Favorite Dish:</label>
+      <select id="dish">
+        <option value="Anticuchos">Anticuchos</option>
+        <option value="Picarones">Picarones</option>
+        <option value="Tamales">Tamales</option>
+      </select>
+
+      <label>Rating:</label>
+      <div>
+        <input type="radio" name="rating" value="1" required> 1
+        <input type="radio" name="rating" value="2"> 2
+        <input type="radio" name="rating" value="3"> 3
+        <input type="radio" name="rating" value="4"> 4
+        <input type="radio" name="rating" value="5"> 5
+      </div>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" rows="4"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="reviewCount"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Peruvian Street Food | <a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>
